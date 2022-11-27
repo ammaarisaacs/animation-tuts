@@ -1,0 +1,25 @@
+body {
+  background-color: tan;
+}
+#container {
+  position: relative;
+  width: 1500px;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#drag {
+  position: absolute;
+  height: inherit;
+  border-radius: 10px;
+  transform: translateX(0);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.block {
+  padding: 8px;
+  height: inherit;
+  display: inline-block;
+}

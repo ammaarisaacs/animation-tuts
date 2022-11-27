@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  background-color: coral;
+}
+
+#word {
+  position: absolute;
+  display: block;
+  left: 44px;
+  top: 96px;
+  z-index: 3;
+}
+
+#svg-path {
+  position: absolute;
+  left: 45px;
+  top: 96px;
+}
+
+#path {
+  position: absolute;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  z-index: 1;
+  animation: dash 1s forwards;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 320;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#word2 {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+}
+
+/* #path2 {
+} */
